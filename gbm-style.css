@@ -77,7 +77,7 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 40px;
     font-style: normal;
-    color: #666;
+    color: #000;
 }
 
 /* GBM index link */
@@ -125,4 +125,12 @@ a:hover {
         font-size: 18px;
         margin-bottom: 32px;
     }
+}
+.date-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #000;   /* black date */
+    font-size: 14px;
+    font-style: normal;
 }
