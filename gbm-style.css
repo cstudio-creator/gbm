@@ -8,18 +8,18 @@ body {
     line-height: 1.55;
     font-size: 13.5px;              /* slightly smaller print */
     color: #000000;                 /* maximum black */
-    background-color:  #fcfcfc;      /* light grey page background */
-    display: flex;
-    justify-content: center;        /* centers the column */
+    background-color: #fcfcfc;      /* light grey page background */
+    max-width: 5.8in;               /* homepage uses same column width */
 }
 
-/* CONTENT PANEL — exact 5.8 inch column */
+/* CONTENT PANEL — used only on article pages */
 .content {
-    width: 5.8in;                   /* precise 5.8-inch column */
-    background-color: #ffffff;      /* background behind text only */
+    width: 5.8in;                   
+    background-color: #ffffff;
     padding: 26px;
-    border: 1px solid #d0d0d0;      /* soft border */
+    border: 1px solid #d0d0d0;
     box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    margin: 0 auto;
 }
 
 /* Typography */
@@ -30,17 +30,26 @@ h1, h2, h3 {
     color: #000000;
 }
 
-/* NEW — smaller H1 to fit two lines */
+/* GBM homepage title */
+.gbm-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+/* Article H1 — smaller for two-line fit */
 h1 {
-    font-size: 19px;                /* reduced for two-line fit */
+    font-size: 19px;
     margin-top: 10px;
     margin-bottom: 26px;
-    line-height: 1.28;              /* tighter, elegant */
+    line-height: 1.28;
 }
 
 h2 {
     font-size: 16.5px;
-    color: #000000;
     margin-top: 0;
     margin-bottom: 26px;
 }
@@ -114,11 +123,18 @@ a:hover {
         margin: 20px auto;
         padding: 0 12px;
         font-size: 13px;
+        max-width: 100%;
     }
 
     .content {
         width: 100%;
         padding: 18px;
+    }
+
+    .gbm-title {
+        font-size: 32px;
+        margin-top: 5px;
+        margin-bottom: 16px;
     }
 
     h1 {
