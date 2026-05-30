@@ -6,21 +6,32 @@ body {
     margin: 60px auto;
     padding: 0 20px;
     line-height: 1.55;
-    font-size: 13.5px;              /* slightly smaller print */
-    color: #000000;                 /* maximum black */
-    background-color: #fcfcfc;      /* light grey page background */
-    max-width: 5.8in;               /* homepage uses same column width */
+    font-size: 13.5px;
+    color: #000000;
+    background-color: #fcfcfc;
+    max-width: 5.8in;
 }
 
 /* CONTENT PANEL — used only on article pages */
 .content {
-    width: 5.8in;                   
+    width: 5.8in;
     background-color: #ffffff;
-    padding: 26px;
+    padding: 40px;
     border: 1px solid #d0d0d0;
     box-shadow: 0 0 6px rgba(0,0,0,0.05);
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
+
+/* Invisible spacing block for pages without titles */
+.article-title-space {
+    height: 80px;
+}
+
+/* Article titles inside content panel (for pages that DO have titles) */
+.content h1 {
+    margin-top: 32px;
+}
+
 
 /* Typography */
 h1, h2, h3 {
@@ -30,20 +41,10 @@ h1, h2, h3 {
     color: #000000;
 }
 
-/* GBM homepage title */
-.gbm-title {
-    font-size: 40px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    color: #000000;
-}
-
 /* Article H1 — smaller for two-line fit */
 h1 {
     font-size: 19px;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 26px;
     line-height: 1.28;
 }
@@ -59,10 +60,30 @@ h3 {
     margin-top: 30px;
 }
 
+/* GBM homepage title */
+.gbm-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    line-height: 1.2;
+    color: #002244;
+}
+
+/* Homepage description spacing */
+/* Homepage description spacing */
 p {
+    margin-top: 0;
     margin-bottom: 18px;
     font-size: 13.5px;
     color: #000000;
+}
+
+/* Homepage link list spacing + size */
+.homepage-links {
+    margin-top: 60px;   /* distance from GBM heading */
+    font-size: 20px;    /* larger letters */
+    line-height: 2;   /* optional: calmer vertical rhythm */
 }
 
 ul {
@@ -134,7 +155,7 @@ a:hover {
     .gbm-title {
         font-size: 32px;
         margin-top: 5px;
-        margin-bottom: 16px;
+        margin-bottom: 1px;
     }
 
     h1 {
